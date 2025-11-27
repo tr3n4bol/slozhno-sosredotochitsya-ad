@@ -1,0 +1,12 @@
+:root {
+  --font-family: "IBM Plex mono";
+  --text-bold: bold;
+  --text-size: 18px;
+  --page-gap: 30px;
+  --min-block-size: 668px;
+  --header-button-border: 1px solid var(--border-buttun-color);
+  --grand-title-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-gap: 50px;
+  --gallery-gap: 10px;
+  --relative-gap: clamp(10px, 2.545vw + 0.455px, 20px);
+}

@@ -1,0 +1,63 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+  --page-bg-color: var(--color-lavender-white);
+  --highlighted-bg-color: var(--color-princess-perfume-pink);
+  --highlighted-title-text-color: var(--color-gray);
+  --page-bg-img: url("../images/cover-image-light.png");
+  --header-decoration-color: var(--color-gray);
+  --header-text-color: var(--color-gray);
+  --header-button-border_hover: 1px solid rgb(255, 0, 112, 0.4);
+  --border-buttun-color: var(--color-gray);
+  --header-title-text-color: var(--color-rose-pink);
+  --header-title-shadow: 4px 4px var(--color-princess-perfume-pink);
+  --section-title-color: var(--color-gray);
+  --card-title-color: var(--color-gray);
+  --card-title-bg-color: var(--color-princess-perfume-pink);
+  --card-text-color: var(--color-gray);
+  --link-shadow: 2px 2px var(--color-princess-perfume-pink);
+  --footer-title-color: var(--color-rose-pink);
+  --footer-title-shadow: 2px 2px var(--color-pink);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-bg-color: var(--color-lavender-white);
+    --highlighted-bg-color: var(--color-princess-perfume-pink);
+    --highlighted-title-text-color: var(--color-gray);
+    --page-bg-img: url("../images/cover-image-light.png");
+    --header-decoration-color: var(--color-gray);
+    --header-text-color: var(--color-gray);
+    --header-button-border_hover: 1px solid rgb(255, 0, 112, 0.4);
+    --border-buttun-color: var(--color-gray);
+    --header-title-text-color: var(--color-rose-pink);
+    --header-title-shadow: 4px 4px var(--color-princess-perfume-pink);
+    --section-title-color: var(--color-gray);
+    --card-title-color: var(--color-gray);
+    --card-title-bg-color: var(--color-princess-perfume-pink);
+    --card-text-color: var(--color-gray);
+    --link-shadow: 2px 2px var(--color-princess-perfume-pink);
+    --footer-title-color: var(--color-rose-pink);
+    --footer-title-shadow: 2px 2px var(--color-pink);
+  }
+
+  .decoration_word {
+    display: none;
+  }
+
+  .decoration_word::after {
+    display: none;
+  }
+}
+
+.theme-light .decoration_word {
+  display: none;
+}
+
+.theme-light .decoration_word::after {
+  display: none;
+}
