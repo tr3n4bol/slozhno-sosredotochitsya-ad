@@ -46,11 +46,7 @@
 .decoration_word {
   position: absolute;
   top: var(--relative-gap);
-  right: clamp(
-    38px,
-    calc(38px + (48px - 38px) * (100vw - 375px) / (768px - 375px)),
-    48px
-  );
+  right: clamp(38px, 20px + 5vw, 48px);
   color: var(--header-decoration-color);
   font-size: 18px;
   line-height: 25px;
@@ -110,7 +106,7 @@
   font-size: var(--grand-title-text-size);
   color: var(--header-title-text-color);
   text-shadow: var(--header-title-shadow);
-  margin-inline-start: clamp(0px, calc(10px * (768px - 100vw) / 393px), 10px);
+  margin-inline-start: clamp(0px, 20px - 2.5vw, 10px);
   line-height: 83%;
 }
 
