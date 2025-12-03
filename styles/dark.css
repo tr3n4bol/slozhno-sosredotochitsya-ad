@@ -28,6 +28,14 @@
   --footer-title-shadow: 2px 2px var(--color-pink);
 }
 
+.theme-dark .decoration_word {
+  display: inline-block;
+}
+
+.theme-dark .decoration_word::after {
+  display: inline-block;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --page-bg-color: var(--color-black);
@@ -56,12 +64,4 @@
   .decoration_word::after {
     display: inline-block;
   }
-}
-
-.theme-dark .decoration_word {
-  display: inline-block;
-}
-
-.theme-dark .decoration_word::after {
-  display: inline-block;
 }

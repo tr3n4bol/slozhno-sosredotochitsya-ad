@@ -24,6 +24,15 @@
   --footer-title-shadow: 2px 2px var(--color-pink);
 }
 
+.theme-light .decoration_word {
+  display: none;
+}
+
+.theme-light .decoration_word::after {
+  display: none;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     --page-bg-color: var(--color-lavender-white);
@@ -52,12 +61,4 @@
   .decoration_word::after {
     display: none;
   }
-}
-
-.theme-light .decoration_word {
-  display: none;
-}
-
-.theme-light .decoration_word::after {
-  display: none;
 }
